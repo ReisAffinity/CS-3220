@@ -1,0 +1,135 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Registration Forms</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+
+	<h3 class="display-3">Registration Forms</h3>
+	<p>Fill out these forms.</p>
+	
+	<div class="card">
+		<h5 class="card-header">
+            Form #1: 
+			<small>GET Request</small>
+		</h5>
+		<div class="card-body">			
+			<form action="lab2/RequestParameters" method="get">
+				<div class="form-group">
+				    <label for="name">Username</label>
+				    <input type="text" class="form-control" id="name" name="username" aria-describedby="nameHelp">
+					<small id="nameHelp" class="form-text text-muted">Please enter your username.</small>
+				</div>
+				<div class="form-group">
+				    <label for="email">Password</label>
+				    <input type="text" class="form-control" id="email" name="password" aria-describedby="emailHelp">
+					<small id="emailHelp" class="form-text text-muted">Please enter your e-mail address.</small>
+				</div>
+				<button type="submit" class="btn btn-primary">Submit</button>
+			</form>
+		</div>
+	</div>
+	<hr>
+	
+	<div class="card">
+		<h5 class="card-header">
+            Form #2: 
+			<small>GET Request</small>
+		</h5>
+		<div class="card-body">			
+			<form action="lab2/RequestParameters" method="get">
+				<div class="form-group">
+				    <label for="availability">Favorite Days</label>
+				 	<div class="form-check">
+						<input class="form-check-input" type="checkbox" name="favorite" value="Monday" id="check1">
+						<label class="form-check-label" for="check1">Monday</label>
+					</div>
+					<div class="form-check">
+						<input class="form-check-input" type="checkbox" name="favorite" value="Tuesday" id="chec2">
+						<label class="form-check-label" for="check2">Tuesday</label>
+					</div>
+					<div class="form-check">
+						<input class="form-check-input" type="checkbox" name="favorite" value="Wednesday" id="check3">
+						<label class="form-check-label" for="check3">Wednesday</label>
+					</div>
+					<div class="form-check">
+						<input class="form-check-input" type="checkbox" name="favorite" value="Thursday" id="check4">
+						<label class="form-check-label" for="check4">Thursday</label>
+					</div>
+					<div class="form-check">
+						<input class="form-check-input" type="checkbox" name="favorite" value="Friday" id="check5">
+						<label class="form-check-label" for="check5">Friday</label>
+					</div>
+					<div class="form-check">
+						<input class="form-check-input" type="checkbox" name="favorite" value="Saturdady" id="check6">
+						<label class="form-check-label" for="check6">Saturday</label>
+					</div>
+					<div class="form-check">
+						<input class="form-check-input" type="checkbox" name="favorite" value="Sunday" id="check7">
+						<label class="form-check-label" for="check7">Sunday</label>
+					</div>
+					<small id="professorsHelp" class="form-text text-muted">Select your favorite days(s). Choose all that apply.</small>
+				</div>
+
+				<button type="submit" class="btn btn-primary">Submit</button>								
+			</form>
+		</div>
+    </div>
+    
+	<hr>
+	
+	<div class="card">
+		<h5 class="card-header">
+            Form #3: 
+			 <small>POST Request</small>
+		</h5>
+		<div class="card-body">			
+			<form action="lab2/RequestParameters" method="post">
+				<div class="form-group">
+				    <label for="username">Full Name</label>
+				    <input type="text" class="form-control" id="fullName" name="fullName" aria-describedby="fullNameHelp">
+					<small id="usernameHelp" class="form-text text-muted">Please enter your full name.</small>
+				</div>
+				<div class="form-group">
+				    <label for="password">Phone Number</label>
+				    <input type="password" class="form-control" id="password" name="phoneNumber" aria-describedby="passwordHelp">
+					<small id="passwordHelp" class="form-text text-muted">Please enter your phone number.</small>
+				</div>
+				<div class="form-group">
+				    <label for="courses">Hobbies</label>
+				    <select multiple class="form-control" id="courses" name="hobby">				      
+				      <option>Web and Internet Programming</option>				      
+				      <option>Trends in Web Development</option>
+				      <option>Other</option>
+				    </select>
+					<small id="coursesHelp" class="form-text text-muted">Select your favorite courses. Windows: <code>Ctrl</code> + <code>Click</code>. Mac: <code>Cmd</code> + <code>Click</code> to select multiple courses.</small>
+				</div>
+				<div class="form-group">
+				    <label for="interests">Favorite Languages</label>
+				    <div class="form-check">
+						<input class="form-check-input" type="checkbox" name="language" value="Java" id="check8">
+						<label class="form-check-label" for="check4">Java</label>
+					</div>
+				    <div class="form-check">
+						<input class="form-check-input" type="checkbox" name="language" value="C++" id="check9">
+						<label class="form-check-label" for="check4">C++</label>
+					</div>
+					<div class="form-check">
+						<input class="form-check-input" type="checkbox" name="language" value="Python" id="check10">
+						<label class="form-check-label" for="check5">Python</label>
+					</div>
+					<div class="form-check">
+						<input class="form-check-input" type="checkbox" name="language" value="Other" id="check11">
+						<label class="form-check-label" for="check6">Other</label>
+					</div>
+					<small id="professorsHelp" class="form-text text-muted">Select your favorite professor(s). Choose all that apply.</small>
+				</div>
+				<button type="submit" class="btn btn-primary">Submit</button>								
+			</form>
+		</div>
+	</div>
+</div>
+</body>
+</html>
